@@ -1,6 +1,6 @@
 ### CRUD COM PYTHON E MSQL
  
-* **Conexão com MSQL**
+* **Conexão com banco de dados MSQL**
 * **Criando um Create**
 * **Criando um Read**
 * **Criando um Update**
