@@ -13,6 +13,7 @@ cursor = conexao.cursor()
 
 
 # CRUD  
+
 nome_produto = "todynho"
 comando = f'DELETE FROM vendas WHERE nome_produto = "{nome_produto}"'
 cursor.execute(comando)
