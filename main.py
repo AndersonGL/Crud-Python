@@ -1,53 +1,72 @@
 import mysql.connector
 
-conexao = mysql.connector.connect(      #conexão com bancos de dados
-  # host='localhost',
-  # user='root',
-  # password='123456',
-  # database='bdyoutube',
-)
-
-
-cursor = conexao.cursor()    
+conexao = mysql.connector.connect(
   
+   host='localhost',
+   user='root',
+   password='1234',
+   database='bdyoutube',
+  
+)
+cursor = conexao.cursor()  #cursor
+
+# CRUD PYTHON COM MSQL
 
 
-# CRUD  
-
-nome_produto = "todynho"
-comando = f'DELETE FROM vendas WHERE nome_produto = "{nome_produto}"'
-cursor.execute(comando)
-conexao.commit() # edita o banco de dados
 
 
-cursor.close()
-conexao.close()
+ #CREATE
 
-# CREATE          
-
-nome_produto = "chocolate"       # cria itens dentro do banco
-valor = 15
+nome_produto = 'leite'   # Cria dados no banco
+valor = 6
 comando = f'INSERT INTO vendas (nome_produto, valor) VALUES ("{nome_produto}", {valor})'
-cursor.execute(comando)
-conexao.commit() # edita o banco de dados
+cursor.execute (comando)
+conexao.commit() 
 
 
-# READ                             # Lê o dados no banco
+
+# READ
+
 comando = f'SELECT * FROM vendas'
 cursor.execute(comando)
-resultado = cursor.fetchall() # ler o banco de dados
+resultado = cursor.fetchall() #  Ler dados do banco
 print(resultado)
 
- 
-# UPDATE                     # Atualiza o banco
-nome_produto = "todynho"
+
+#UPDATE
+
+nome_produto = "chocolate"           #  Atualiza itens do banco
 valor = 6
 comando = f'UPDATE vendas SET valor = {valor} WHERE nome_produto = "{nome_produto}"'
 cursor.execute(comando)
-conexao.commit() # edita o banco de dados
+conexao.commit()  
 
-# DELETE                       # Exclui itens
-nome_produto = "todynho"
+
+#DELETE
+
+
+nome_produto = 'desktop'
 comando = f'DELETE FROM vendas WHERE nome_produto = "{nome_produto}"'
 cursor.execute(comando)
-conexao.commit() # edita o banco de dados
+conexao.commit()          # Exclui itens do banco
+
+
+
+
+cursor.close()   # para fechamento do cursor
+conexao.close()   # para fechamento do banco 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# conexao.commit() # edita o banco de dados
+# resultado = cursor.fetchall() # ler o banco de dados
