@@ -6,4 +6,4 @@
 * **Criando um Update**
 * **Criando um Delete**
 
-* **Alimentando , Atualizando e deletando itens de uma tabela.**
+* **Alimentando , Atualizando e Deletando itens de uma tabela.**
