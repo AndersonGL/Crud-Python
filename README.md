@@ -52,3 +52,24 @@ tests/                       # cobertura com pytest
 .env.example                 # stub de variáveis de ambiente
 requirements.txt
 README.md
+
+🧰 Operações CRUD
+
+Operação	Função	Trecho SQL	Descrição
+
+Create	create_employee(data)	INSERT INTO employees ...	Insere novo registro
+Read	get_employee(emp_id)	SELECT * FROM employees WHERE id = %s	Busca registro
+Update	update_employee(emp_id, data)	UPDATE employees SET ...	Atualiza registro
+Delete	delete_employee(emp_id)	DELETE FROM employees WHERE id = %s	Remove registro
+
+
+
+---
+
+▶️ Executando o Projeto
+
+# inicializa as tabelas (opcional)
+mysql -u root -p < src/db/migrations.sql
+
+# roda a aplicação
+python src/main.py
