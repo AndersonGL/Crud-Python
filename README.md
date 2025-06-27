@@ -1,4 +1,4 @@
-
+# 📚 CRUD com Python & MySQL
 
 > Implementação enxuta e profissional das operações **Create – Read – Update – Delete** usando Python 3.10+ e MySQL 8.x.  
 > Demonstra boas práticas de conexão, consultas parametrizadas e organização em camadas.
@@ -33,3 +33,9 @@ pip install -r requirements.txt
 
 # 4 — configure credenciais
 cp .env.example .env             # edite USER, PASSWORD, HOST, DB
+
+> Implementação enxuta e profissional das operações **Create – Read – Update – Delete** usando Python 3.10+ e MySQL 8.x.  
+> Demonstra boas práticas de conexão, consultas parametrizadas e organização em camadas.
+
+---
+
