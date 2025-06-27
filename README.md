@@ -1,14 +1,4 @@
-### CRUD COM PYTHON E MSQL
- 
-* **Conexão com Banco de Dados MSQL**
-* **Criando um Create**
-* **Criando um Read**
-* **Criando um Update**
-* **Criando um Delete**
 
-* **Alimentando , Atualizando e Deletando itens de uma tabela.**
-
-# 📚 CRUD com Python & MySQL
 
 > Implementação enxuta e profissional das operações **Create – Read – Update – Delete** usando Python 3.10+ e MySQL 8.x.  
 > Demonstra boas práticas de conexão, consultas parametrizadas e organização em camadas.
