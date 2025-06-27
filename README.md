@@ -39,3 +39,16 @@ cp .env.example .env             # edite USER, PASSWORD, HOST, DB
 
 ---
 
+src/
+ ├── db/
+ │   ├── connection.py      # pool de conexões
+ │   └── migrations.sql     # criação das tabelas
+ ├── models/                # dataclasses ou Pydantic
+ ├── repositories/          # funções CRUD (DAO)
+ ├── services/              # regras de negócio
+ └── main.py                # entry-point
+
+tests/                       # cobertura com pytest
+.env.example                 # stub de variáveis de ambiente
+requirements.txt
+README.md
